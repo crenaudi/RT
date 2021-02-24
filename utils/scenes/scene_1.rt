@@ -1,0 +1,3 @@
+create type{cube} id{test}
+change_id id1{test} id2{prout}
+create_light pos{x:0 y:6 z:2}

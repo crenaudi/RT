@@ -1,0 +1,19 @@
+create type{cone} mat{solid_color} attr{r:1 h:2} pos{x:0, y:1, z:0} col{r:54 g:22 b:22}
+create type{cube} id{pilier} attr{x:0.2 y:7 z:0.2} pos{x:4, y:-1, z:-2} mat{mirror_impure} disp{sin} disp_intensity{1}
+create type{cube} id{pilier} attr{x:0.2 y:7 z:0.2} pos{x:-4, y:-1, z:-2} mat{mirror_impure}  disp{sin} disp_intensity{2.5}
+create type{cube} id{pilier} attr{x:5 y:0.3 z:0.2} pos{x:0, y:6, z:-2} mat{mirror_impure} disp{sin} disp_intensity{1.5}
+create type{sphere} id{orange1} attr{r:0.2} pos{x:-1.6 y:-0.6 z:4.2} col{r:255 g:117 b:33}
+create type{sphere} id{orange2} attr{r:0.2} pos{x:-2.1 y:-0.6 z:3.8} col{r:255 g:117 b:33}
+create type{custom} id{bol} op{sub} mat{mirror_impure} disp{none}
+create type{sphere} id{bol1} attr{r:0.5} pos{x:0 y:-0.3.5 z:4} mat{mirror_impure} disp{none}
+create type{sphere} id{bol2} attr{r:0.5} pos{x:0 y:-0.4 z:4} mat{mirror_impure} disp{none}
+create type{custom} id{gong} op{sub} col{r:213 g:160 b:33}
+create type{elli} id{gong1} attr{x:0.6 y:0.2 z:0.5} pos{x:-1.8, y:-0.6, z:4}
+create type{elli} id{gong2} attr{x:0.6 y:0.2 z:0.5} pos{x:-1.8, y:-0.7, z:4}
+create type{cube} id{tapis} attr{x:4 y:0.2 z:1.1} pos{x:0, y:-1.1, z:4.1} col{r:137 g:51 b:51}
+create_light pos{x:1 y:5 z:0.5}
+create_light pos{x:-3 y:5 z:2} col{r:2 g:2 b:2}
+create type{custom} id{c} op{sub} col{r:54 g:22 b:22}
+create type{sphere} id{s} pos{x:0 y:2.0 z:0}s
+create type{octa} id{o} attr{s:1.5} disp{twist} pos{x:0 y:2.0 z:0}
+create type{plane} pos{x:0 y:-2 z:0} col{r:54 g:22 b:22}

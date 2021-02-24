@@ -1,0 +1,8 @@
+create type{plane}
+create type{cube} pos{x: -3 y: 1 z: 5} mat{checkers}
+create type{sphere} pos{x: 0 y: 1 z: 5} mat{polka_dot}
+create type{octa} pos{x: 3 y: 1 z: 5} mat{stone}
+create type{cone} pos{x: 6 y: 1 z: 5} mat{solid_color} col{r:255 g:0 b:0}
+create type{torus} pos{x: -3 y: 1 z: 2} mat{solid_color} col{r:0 g:0 b:255} attr{r1:0.5 r2:1}
+dump_bmp
+quit

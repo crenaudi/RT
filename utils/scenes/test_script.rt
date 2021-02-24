@@ -1,0 +1,3 @@
+create type{sphere} id{o} mat {mirror}
+dump_bmp
+quit

@@ -1,0 +1,3 @@
+create_light pos{x:0 y:6 z:0}
+create type{sphere} id{m} pos{x:0 y:1 z:0} col{r:100 g:0 b:50} shin{100}
+create type{plane} id{plane}

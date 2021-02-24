@@ -1,0 +1,57 @@
+.\" Manpage for omegart.
+.\" Contact brjorgen@student.42.us.org in to correct errors or typos.
+.TH man 6 "10 Jul 2020" "0.1" "omegart man page"
+
+.SH NAME
+.B omegart
+\- the rt to rule them all
+
+.SH SYNOPSIS
+.B omegart [OPTION]... [PATH_TO_SCENE]...
+
+.SH DESCRIPTION
+.B omegart
+is a volumetric rendering engine written in C, made in the intents of
+.B finishing the graphics branch of 42school
+and, almost as importantly,
+.B flexing on these nerds.
+
+Objects are represented by signed distance functions, and can be modified by either specifying
+what operation to perform in the scene file, or applying them directly to the objects through
+the interactive console.
+
+.SS NAVIGATION
+.SS W
+move camera up
+.SS S
+move camera down
+.SS A
+move camera left
+.SS D
+move camera right
+.SS UP
+move camera forwards
+.SS DOWN
+move camera backwards
+
+.SS OPERATIONS
+.SS union
+the objects are united as if they were merged into a single one.
+.B This is the default option.
+.SS subtraction
+the objects are subtracted from one another.
+.SS intersection
+exposes what parts of the objects are intersecting.
+
+.SH BUGS
+see todo.org
+.SH COMING FEATURES
+obj file parser & loader
+
+.SH AUTHORS
+.SS Brian Jorgensen
+brjorgen@student.42.us.org
+.SS Timothée Gondolo
+tigondol@student.42.fr
+.SS Camille Renaudin
+crenaudi@student.42.fr

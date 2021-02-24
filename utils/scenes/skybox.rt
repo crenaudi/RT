@@ -1,0 +1,8 @@
+create_light pos{x:0 y:5 z:0}
+create type{custom} op{sub}
+create type{sphere} attr{r:10}
+create type{sphere} attr{r:30} disp{none} col{r:0 g:0 b:0} mat{mirror_pure}
+create type{sphere} attr{r:1} pos{x:3 y:1 z:2} disp{none} col{r:255 g:0 b:0}
+create type{plane} mat{mirror_pure} disp{none}
+dump_bmp
+quit

@@ -1,0 +1,7 @@
+create_light pos{x:0 y:5 z:0}
+create type{cube}   id{mirror_cube}   pos{x:0:1 z:0}    col{r:0 g:0 b:0}   disp{none} mat{mirror_pure}
+create type{sphere} id{blue_sphere}   pos{x:-3 y:1 z:0} col{r:0 g:0 b:255} disp{none}
+create type{sphere} id{red_sphere}    pos{x:0  y:1 z:-3} col{r:255 g:0 b:0} disp{none}
+create type{sphere} id{green_sphere}  pos{x:3  y:1 z:0} col{r:0 g:255 b:0} disp{none}
+create type{sphere} id{yellow_sphere} pos{x:0  y:1 z:3} col{r:255 g:190 b:0} disp{none}
+create type{plane}

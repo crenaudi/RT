@@ -1,0 +1,5 @@
+create type{cylinder} id{c}
+create type{cube} id{cube} pos{x:3 y:2 z:3}
+create type{plane}
+rotate id{cube} rot{y:45}
+create_light

@@ -1,0 +1,7 @@
+create_light
+create type{sphere} id{sphere_1} pos{x: 0 y: 1 z:5} mat{solid_color} col{r:255 g: b:0}
+create type{cone} id{cone_1} pos{x: 0 y: 1 z:8} mat{solid_color} col{r:150 g:150 b:0}
+create type{torus} id{torus_1} pos{x:-3 y:2 z:-3} attr{r1:2 r2:0.5} mat{solid_color} col{r:0 g:255 b:0}
+create type{cylinder} id{cylinder_1} pos{x:-6 y:1 z:5} attr{r:2 h:2} mat{solid_color} col{r:0 g:0 b:255}
+create type{octa} id{torus_1} pos{x:-2 y:2 z:-3} attr{r1:2} mat{solid_color} col{r:100 g:0 b:150}
+create type{plane} mat{mirror_pure} col{r:0 g:0 b:150}

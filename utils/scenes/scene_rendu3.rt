@@ -1,0 +1,5 @@
+create type{plane} id{sol}
+create type{sphere} id{sphere_1} pos{x:1 y:1 z:1} mat{solid_color} col{r:255 g: b:0}
+create_light pos{x:4 y:6 z:-2}
+create_light pos{x:3 y:6 z:0}
+create_light pos{x:2 y:6 z:2}

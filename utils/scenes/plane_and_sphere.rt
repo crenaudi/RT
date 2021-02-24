@@ -1,0 +1,7 @@
+create type{plane}  id{p}
+create_light pos{x:0 y:6 z:0} int{x:1 y:1 z:1}
+create_light pos{x:2 y:6 z:0} int{x:0.5 y:0 z:0.5}
+create type{sphere} id{m} pos{x:0 y:1 z:0} mat{mirror_pure} disp{none}
+create type{cube} id{r} pos{x:0 y:1 z:3} col{r:255 g:0 b:0} mat{mirror_pure} disp{none}
+dump_bmp
+quit

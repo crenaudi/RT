@@ -1,0 +1,4 @@
+create type{cylinder} id{c}
+create type{plane}
+rotate id{c} rot{y:90}
+create_light

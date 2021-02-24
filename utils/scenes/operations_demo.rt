@@ -1,0 +1,11 @@
+create_light        pos{x:0 y:5 z:5}
+create type{custom} id{custom_0} op{sub} col{r:200 g:0 b:100}
+create type{octa}   mat{solid_color} attr{s:0.7} pos{x:2, y:3, z:0}
+create type{sphere} mat{solid_color} attr{r:0.5} pos{x:2, y:3, z:0}
+create type{plane}          id{p}
+create type{custom} op{sub} id{custom_1} col{r:200 g:0 b:0}
+create type{cube}           id{c_op}
+create type{octa} attr{s:2} id{o_op}
+create type{sphere} id{s} col{r: g:0 b:100}
+dump_bmp
+quit

@@ -1,0 +1,9 @@
+create type{custom} id{c} op{sub} 
+create type{cube} id{cube1} attr{b{x:10 y:10 z:10}} pos{x:0 y:0 z:0}
+create type{cube} id{cube2} attr{b{x:11 y:11 z:11}} pos{x:0 y:0 z:0}
+create type{sphere} id{sphere_1} pos{x:-1 y:2 z:0} mat{solid_color} col{r:255 g: b:0}
+create type{cone} id{cone_1} pos{x: 0 y:-2 z:1} mat{solid_color} col{r:150 g:150 b:0}
+create type{torus} id{torus_1} pos{x:-2 y:1 z:-1} attr{r1:1.5 r2:0.5} mat{solid_color} col{r:0 g:255 b:0}
+create type{cylinder} id{cylinder_1} pos{x:4 y:1 z:1} attr{r:1.5 h:1.5} mat{solid_color} col{r:0 g:0 b:255}
+create_light pos{x:2 y:4 z:2}
+create_light pos{x:-2 y:4 z:2}

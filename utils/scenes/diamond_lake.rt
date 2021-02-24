@@ -1,0 +1,5 @@
+create_light pos{x:0 y:5 z:0}
+create type{octa} id{o} attr{s:1.5} disp{sin} pos{x:0 y:1.5 z:0} disp_intensity{10}
+create type{plane} id{p} col{b:255 r:0 g:0} mat{mirror_impure} disp{none}
+dump_bmp
+quit

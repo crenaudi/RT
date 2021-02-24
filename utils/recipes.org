@@ -1,0 +1,120 @@
+* Presentation of OMEGART
+** Features
+*** Loading files
+    The executable takes at most one argument.
+    This argument should be the path to a scene file.
+    If no path is provided, an empty scene is loaded.
+
+    Either way, these scenes can be interacted with through the REPL.
+
+*** The REPL
+    OMEGA_RT comes with a builtin REPL interface that allows you to add, 
+    delete, modify, translate, rotate objects on the fly. See this interface as
+    an interactive scene composer.
+
+**** REPL commands
+     * create		- create an object.
+       * requires:
+	     type{[type_of_object]}
+
+       * optional:
+		pos{x:n y:n z:n}
+		id{[name of the object]}
+		attr{[object depentend variable names / tags]}
+		mat{[texture type]}
+
+     * delete		- delete an object.
+       * requites: 
+	       id{object_to_delete}
+       * optional:
+	       N/A
+
+     * translate	- translate an object.
+       * requires:
+	       id{object_to_translate} 
+	       pos{x:new_pos y:new_pos z:new_pos}
+
+     * print_list	- print the active object list.
+       * requires:
+	       N/A
+       * optional:
+	       N/A
+
+     * clear		- delete the active object list.
+       * requires:
+	       N/A
+       * optional:
+	       N/A
+
+     * rename		- rename an obejct.
+       * requires:
+		id{original_id}
+		id2{new_id}
+       * optional:
+		N/A
+
+     * quit		- quit the program
+       * requires:
+		N/A
+       * optional:
+		N/A
+
+     * print_object	- print specified object data
+       * requires:
+		id{object_to_check_data}
+       * optional:
+		N/A
+
+     * load scene	- load a scene file from the shell
+       * requites:
+		path to scene file.
+       * optional:
+		N/A
+
+     * display		- display all changes to scene
+       * requires:
+		N/A
+       * optional:
+		N/A
+
+     * freecam		- move the camera around freely.
+       * requires:
+		N/A
+       * optional:
+		N/A
+
+     * dup		- duplicate an object
+       * requires:
+		id{object_to_dup} dup_id{id_of_duplicated_object}
+       * optional:
+		N/A
+
+*** Availlable shapes
+    capsule
+    cone
+    cube
+    cylinder
+    elli
+    octa
+    plane
+    sphere
+    torus
+
+* Examples
+** Creation recipes
+*** torus
+   create type{torus} attr{r1:0.5 r2:1} id{created_torus} pos{x:0 y:1 z:6} op{none} col{255 255 255}
+*** sphere
+   create type{sphere} attr{r:1} id{created_sphere} pos{x:0.5 y:1 z:6} op{none} col{255 255 255}
+*** cube
+   create type{cube} attr{b{x:1 y:1 z:1}} id{created_cube} pos{x:0 y:1 z:6} op{none} col{255 255 255}
+*** octa
+   create type{octa} attr{s:2} id{created_octa} pos{x:0.5 y:1 z:6} op{none} col{255 255 255}
+*** plane
+   create type{plane} attr{o{x:0 y:1 z:0}} id{created_plane} pos{x:0 y:0 z:0} op{none} col{255 255 255}
+** Operation recipes
+*** sphere subtraction
+  >>> create type{sphere} attr{r:1} id{created_sphere} pos{x:0.5 y:1 z:6} op{uni} col{255 255 255}
+  >>> apply_op id{initial_sphere} id2{sub}
+  >>> apply_op id{created_sphere} id2{none}
+  >>> dislpay

@@ -1,0 +1,21 @@
+create type{custom} id{c} op{sub}
+create type{sphere} id{s} pos{x:0 y:1.5 z:0}
+create type{octa} id{o} attr{s:1.5} disp{twist} pos{x:0 y:1.5 z:0}
+create type{sphere} pos{x:0 y:1.5 z:0} attr{r:0.5} col{r:0 g:154 b:0}
+create type{sphere} pos{x:4 y:-0.5 z:4} mat{mirror_pure} disp{none} col{r:215 g:154 b:16}
+create type{cube} pos{x:4 y:-0.5 z:4} attr{x:0.5 y:6 z:0.5} col{r:215 g:154 b:16} disp{twist}
+create type{sphere} pos{x:4 y:6 z:4} mat{mirror_pure} disp{none} col{r:215 g:154 b:16}
+create type{sphere} pos{x:4 y:-0.5 z:-4} mat{mirror_pure} disp{none} col{r:215 g:154 b:16}
+create type{cube} pos{x:4 y:-0.5 z:-4} attr{x:0.5 y:6 z:0.5} col{r:215 g:154 b:16} disp{twist}
+create type{sphere} pos{x:4 y:6 z:-4} mat{mirror_pure} disp{none} col{r:215 g:154 b:16}
+create type{sphere} pos{x:-4 y:-0.5 z:-4} mat{mirror_pure} disp{none} col{r:215 g:154 b:16}
+create type{cube} pos{x:-4 y:-0.5 z:-4} attr{x:0.5 y:6 z:0.5} col{r:215 g:154 b:16} disp{twist}
+create type{sphere} pos{x:-4 y:6 z:-4} mat{mirror_pure} disp{none} col{r:215 g:154 b:16}
+create type{sphere} pos{x:-4 y:-0.5 z:4} mat{mirror_pure} disp{none} col{r:215 g:154 b:16}
+create type{cube} id{pillar} pos{x:-4 y:-0.5 z:4} attr{x:0.5 y:6 z:0.5} col{r:215 g:154 b:16} disp{twist}
+create type{sphere} pos{x:-4 y:6 z:4} mat{mirror_pure} disp{none} col{r:215 g:154 b:16}
+create type{custom} id{c} op{sub} col{r:42 g:52 b:57}
+create type{sphere} id{s} attr{r:7.2} pos{x:0 y:12 z:0}
+create type{cube} attr{b{x:6 y:6 z:6}} pos{x:0 y:12 z:0}
+create type{plane} id{plane1} pos{x:0 y:0 z:0} col{r:42 g:52 b:57}
+create_light pos{x:0 y:5 z:0}
